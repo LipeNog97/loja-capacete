@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Josefin Sans", serif;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: blueviolet;
+    color: white;
+     align-items: center;
+}
+
+.store {
+    border: none;
+}
+
+.navegação ul {
+    display: flex;
+    cursor: pointer;
+}
+
+.navegação ul li {
+    padding: 16px;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+.foto-loja {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo-texto {
+    display: flex;
+}
+
+.sobre, .img-loja {
+    padding: 26px;
+}
+h2 {
+    font-size: 36px;
+    padding: 16px;
+}
+ p {
+    padding: 16px;
+    font-size: 18px;
+ }
+
+.sobre-texto {
+    border: none;
+    padding: 16px;
+}
+
+.sec-prod {
+    display: flex;
+    justify-content: space-around;
+    padding: 26px;
+}
+
+.produto {
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) ;
+    border-radius: 8px ;
+    background-color: #f4f4f4;
+}
+
+.item {
+    height: 200px;
+}
+
+.produto img {
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    padding: 8px;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+button {
+    font-size: 16px;
+    padding: 6px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width:1023px) {
+    .logo-texto {
+        flex-direction: column;
+    }
+
+    .sec-prod {
+        flex-wrap: wrap;
+    }
+
+    .foto-loja {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .navegação {
+        display: none;
+    }
+
+    .cabeçalho  {
+        text-align: center;
+    }
+
+    .logo-texto, .sec-prod {
+        flex-direction: column;
+    }
+
+    .foto-loja {
+        height: 180px;
+    }
+
+    .sec-prod {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .foto-loja {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+
